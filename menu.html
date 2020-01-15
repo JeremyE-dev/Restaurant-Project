@@ -6,26 +6,99 @@
     Most recent revision:
 -->
 <html lang="en">
-    <head><title>Menu</title></head>
+    <head>
+      <link href="restaurantStyles.css" rel="stylesheet" type="text/css"/>
 
-    <body>
+      <!--Required meta tags -->
+       <meta charset="utf-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1">
+       <title>Menu</title>
+      <!-- Bootstrap CDN copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
-        <header> <h1 style = "text-align: center;">POD</h1></header>
+      <link href="restaurantStyles.css" rel="stylesheet" type="text/css"/>
+      <link href="https://fonts.googleapis.com/css?family=Poppins" rel='stylesheet'>
+      <link href="https://fonts.googleapis.com/css?family=Peralta" rel='stylesheet'>
+
+      <style>
+      .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 40%;
+      }
+
+      nav{
+        font-family: "Poppins";
+
+        background-color: white;
+        border-top: black solid;
+        border-bottom: black solid;
+        padding-top: 10px;
+        padding-bottom: 85px
+
+      }
+
+      nav .btn {
+      background-color: #FF0000;
+      color: #F8F8FF;
+    }
+
+      nav a:hover {
+      background-color: #FF0000;
+      color: #F8F8FF;
+      font-weight: bold;
+    }
+
+    nav a: link{ <!-- unvisited-->
+      background-color: #FF0000;
+      color: #F8F8FF;
+    }
+
+
+      nav a:active {
+        background-color: #FF0000;
+        color: #F8F8FF;
+    }
+
+      nav a:visited {
+      color: #FFFF00;
+
+    }
+
+    nav a{
+      display: block;
+      margin: 20px 20px 30px 60px;
+      width: 120px;
+      float: left;
+
+    }
+
+      </style>
+
+    </head>
+
+
+
+    <body style= "background-color: #FF8C00">
+
+        <header> Swanson's Olde Town Grill</header>
 
           <nav>
-              <hr/>
-
-              <a href="index.html">Home</a>     <a href="menu.html">Menu</a>     <a href="contact.html">    Contact Us</a>
-            <hr/><br/>
-
+            <img src="images/b-w-2029988_640-smaller.png" width="60" style="float:left;"/>
+            <a class = "btn badge-pill" href="index.html">Home</a>
+            <a class = "btn badge-pill" href="menu.html">Menu</a>
+            <a class = "btn badge-pill"  href="contact.html">Contact Us</a>
             </nav>
 <!--place table of menu items here -->
 
-<table align="center">
+<div style = "padding: 30px">
+<table align="center" >
 <tr style = "text-align: center;" >
-  <th><strong>Burger and Fries</strong></th>
-  <th><strong>Hot Dog and Chips</strong></th>
-  <th><strong>Italian Sausage and Peppers</strong></th>
+  <th style = "font-size: 20px"><strong>Burger and Fries</strong></th>
+  <th style = "font-size: 20px"><strong>Hot Dog and Chips</strong></th>
+  <th style = "font-size: 20px"><strong>Italian Sausage and Peppers</strong></th>
 
 </tr>
 
@@ -40,22 +113,50 @@
   <td><br/></td>
 </tr>
   <tr style = "text-align: center;" >
-    <th><strong>Tenderloin Sandwich and Chips</strong></th>
-    <th><strong>House Salad</strong></th>
-    <th><strong>Brisket Sandwich and Fries</strong></th>
+    <th style = "font-size: 20px"><strong>Tenderloin Sandwich and Chips</strong></th>
+    <th style = "font-size: 20px"><strong>House Salad</strong></th>
+    <th style = "font-size: 20px"><strong>Brisket Sandwich and Fries</strong></th>
 
   <tr>
     <td style = "text-align: center;" > Really Hits the Spot! <br/>Plain or Sesame Seed Bun <br/> Pickle, onion, tomato, and lettuce <br/> Served with our house-made chips <br/>$8.95<br/><br/></td>
     <td style = "text-align: center;"> On the Lighter Side <br/>Your choice - with or without cheese <br/> Iceberg lettuce, tomatoes, peppers <br/> Thousand Island or Ranch Dressing <br/> Served with a dinner roll <br/> $6.95 </td>
     <td  style = "text-align: center;"> A Taste of Texas! <br> Smoked Brisket on thick-cut Texas Toast <br/> Cole Slaw <br/> Served with our famous thick-cut <br/> french fries <br/> $7.95</td>
   </tr>
+  </table>
 
-</table>
+  <table align="center">
+    <tr style = "text-align: left;">
+      <th style="font-size: 20px"><strong>Beverages</strong></th>
+      <th></th>
+    </tr>
+
+    <tr>
+      <td>Root Beer</td>
+      <td>$3.00</td>
+    </tr>
+
+    <tr>
+      <td>Bottled Water</td>
+      <td>$1.25</td>
+    </tr>
+
+    <tr>
+      <td>Lemonade</td>
+      <td>$1.00</td>
+    </tr>
+
+    <tr>
+      <td>Iced Tea</td>
+      <td>$1.25</td>
+    </tr>
+
+
+  </table>
+</div>
+
 <br/>
 <footer> <!-- The footer is a block at the bottom of the page. -->
-<hr />
-<p style="text-align: center;"> 1234 Quiet Street, Milwaukee, Wisconsin, 53201</p>
-<p style="text-align:center;"> 414-123-4567 </p>
+1234 Old Milwaukee Street, Milwaukee WI 53201<br> 414-123-4567
 </footer>
 
     </body>
