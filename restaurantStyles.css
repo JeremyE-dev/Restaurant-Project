@@ -1,40 +1,27 @@
 
 
 
-
 body, html {
   height: 100%; margin: 0;
-
-  <!-- background-image:url("images/gold-1188347_1920.jpg");-->
-
-    background-color: #FF8C00;
-
-
+  background-color: #A9A9A9;
 }
 
 header{
   background-color: white;
   color: black;
-  text-shadow: 2px 2px 2px #EFDECD;
+  text-shadow:
   text-align:left;
-  font-family: "Peralta";
-  font-size: 40px;
+  font-family: "Bebas+Neue&display=swap";
+  font-size: 63px;
   font-style:
   font-weight:
-  padding: 40px 4px 4px 4px;
+  padding: 40px 10px 10px 10px;
 }
 
 footer{
-  font-family:"Poppins";
-  color: black;
-  background-color: white;
-  text-align: center;
-  border-top: black solid;
-  border-bottom: black solid;
-  position: fixed;
-  left:0;
-  bottom: 0;
-  width: 100%;
-
+    font-family:"Poppins";
+     background-color: white;
+     border-top: black solid;
+     border-bottom: black solid;
 
 }

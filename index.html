@@ -2,22 +2,31 @@
 <!--
     Name: Jeremy Eudaly
     Date Created: 1/4/2020
-    Most recent revision: 1/15/2020
+    Most recent revision: 1/26/2020
 -->
 <html lang="en">
 
     <head>
         <!--Required meta tags -->
-         <meta charset="utf-8">
-         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
          <title>Swanson's Home Page</title>
         <!-- Bootstrap CDN copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
-        <link href="restaurantStyles.css" rel="stylesheet" type="text/css"/>
+
         <link href="https://fonts.googleapis.com/css?family=Poppins" rel='stylesheet'>
         <link href="https://fonts.googleapis.com/css?family=Peralta" rel='stylesheet'>
+        <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Bebas+Neue&display=swap" rel='stylesheet'>
+
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link href="restaurantStyles.css" rel="stylesheet" type="text/css"/>
+        <noscript> This site is best viewed with JavaScript enabled </noscript>
+
+
 
         <style>
         .center {
@@ -27,6 +36,8 @@
           width: 40%;
         }
 
+
+
         nav{
           font-family: "Poppins";
 
@@ -34,90 +45,133 @@
           border-top: black solid;
           border-bottom: black solid;
           padding-top: 10px;
-          padding-bottom: 85px
+          padding-bottom: 10px
+
+
+
 
         }
 
-        nav .btn {
-        background-color: #FF0000;
-        color: #F8F8FF;
-      }
+        nav a{
+          display: block;
+          margin: 10px 10px 10px 10px;
+          width: 120px;
+          float: left;
 
-        nav a:hover {
-        background-color: #FF0000;
-        color: #F8F8FF;
-        font-weight: bold;
-      }
+        }
 
-      nav a: link{ <!-- unvisited-->
-        background-color: #FF0000;
-        color: #F8F8FF;
-      }
+        a: hover{
+           color: hotpink;
+        }
 
 
-        nav a:active {
-          background-color: #FF0000;
-          color: #F8F8FF;
-      }
 
-        nav a:visited {
-        color: #FFFF00;
+        #jumboStyles{
+          font-family: "Bebas+Neue&display=swap";
+           font-size: 40px;
+           text-align: center;
+          font-style: italic;
+          background-color: black;
+          color: white;
+          padding: 5px 20px 5px 0px;
+          margin-bottom: 40px
 
-      }
+        }
 
-      nav a{
-        display: block;
-        margin: 20px 20px 30px 60px;
-        width: 120px;
-        float: left;
-
-      }
-
-}
-
-        </style>
-
+    </style>
 
     </head>
 
-  <header>
-      Swanson's Olde Town Grill
+    <header>
+      Swanson's Grill
 
     </header>
 
-    <nav>
-      <img src="images/b-w-2029988_640-smaller.png" width="60" style="float:left;"/>
-      <a class = "btn badge-pill" href="index.html" visited:color: #FFFF00">Home</a>
-      <a class = "btn badge-pill" href="menu.html">Menu</a>
-      <a class = "btn badge-pill"  href="contact.html">Contact Us</a>
+    <div style = "padding-left: 0px; padding-right: 0px" class = "container-fluid">
+      <nav style = "padding-left: 40px">
 
-    </nav>
+        <ul style = "margin-left: 0" class="nav nav-pills">
+          <li>
+            <a href = "index.html"> <i class="material-icons" style = "font-size: 48px; float:none; color: black;" > home </i> </a>
+            </li>
 
-      <body style= "background-color: #FF8C00; color: black">
+            <li class="nav-item">
+                <a class="nav-link active bg-dark" href="menu2.html">Menu</a>
+                </li>
+            <li class="nav-item">
+                <a  class="nav-link active bg-dark"  href="contact.html">Contact</a>
+                </li>
+            </ul>
+
+        </nav>
+
+      </div>
+    <body style=color: black">
+
+      <div>
+        <p class = "jumbotron" id = "jumboStyles">
+        Swanson's is opening a second location at 123 flat street!
+        </p>
+      </div>
+
+      <div class="container">
+
+<div style= "margin-bottom: 40px" class = "row">
+
+    <div class = "col-lg-4">
+      <img src="images/hamburger-1030865_640.jpg" style = "width: 100%;  display: block;  margin-left:auto; margin-right: auto" id="mainpic"/>
+    </div>
+
+    <div class ="col-lg-8">
+      <p style = "font-size: 22px">
+        <strong> Restaurant Description </strong> <br/>
+        Swanson's is a a family owned casual restaurant established in Milwaukee in 1875.
+        We offer traditional American fare in a friendly atmosphere. Stop on by and will fix you sandwich!
+      </p>
+    </div>
+  </div>
+</div>
+
+    <div class="container">
+        <div style= "margin-bottom: 40px" class = "row">
+            <div class = "col-sm-12">
+              <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+
+                <div class="carousel-inner">
+                  <div class="carousel-item text-center active">
+                    <img src="images/floor-1256804_640.jpg" style = "width: 50%" alt="First slide">
+                    <div class="carousel-caption d-none d-md-block">
+                       <h3> We're opening a new location!</h3>
+                     </div>
+                  </div>
+
+                  <div class="carousel-item text-center">
+                    <img src="images/floor-1256804_640.jpg" style = "width: 50%" alt="second slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h4>We're rolling out our seasonal menu,<br/> with special options for this season.</h4>
+                       </div>
+                  </div>
 
 
-        <!-- <div style= "padding-top:50px; padding-bottom: 50px;">
-
-      -->
-
-
-      <div style= "padding-top:20px">
-
-          <img style="display: block; margin-left: auto; margin-right: auto; width: 40%;" src="images/food-1283108_1280.jpg" />
-
-          </div>
-
-      <div >
-
-                <p style = "font-size: 20px" class = "center">
-                  Swanson's is a American grill established in Milwaukee in 1875. Lollipop jujubes icing dessert candy canes muffin sweet roll.
-                  Chupa chups cheesecake halvah carrot cake candy canes gummi bears gummi bears toffee jelly beans.
-                  Cupcake jelly-o oat cake. Sugar plum toffee donut liquorice sweet oat cake fruitcake cake.
-                  Brownie topping danish pastry tootsie roll cupcake powder biscuit halvah.
-                </p>
-                <br>
+                  <div class="carousel-item text-center">
+                    <img src="images/floor-1256804_640.jpg" style = "width: 50%" alt="Third slide">
+                    <div class="carousel-caption d-none d-md-block">
+                       <h3>The Drink of the Month is SG Special Brew.</h3>
+                     </div>
+                  </div>
+                </div>
               </div>
 
+
+
+            </div>
+          </div>
+
+
+        <footer class="container-fluid text-center"> <!-- The footer is a block at the bottom of the page. -->
+
+                  <p> 1234 Old Milwaukee Street, Milwaukee WI 53201<br> 414-123-4567 </p>
+        </footer>
 
 
     <!-- CDN links copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
@@ -130,13 +184,5 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
-        <footer> <!-- The footer is a block at the bottom of the page. -->
-
-          1234 Old Milwaukee Street, Milwaukee WI 53201<br> 414-123-4567
-        </footer>
-
       </body>
-
-
-
 </html>
